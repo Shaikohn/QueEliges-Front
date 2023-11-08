@@ -9,6 +9,10 @@
   padding: 2em;
 }
 
+.container {
+  display: flex;
+}
+
 .firstOption {
   background-color: violet;
   border: solid 5px black;
@@ -17,8 +21,9 @@
   height: auto;
   margin-right: 20px;
   max-width: 500px;
-  position: relative;
   overflow-wrap: break-word;
+  font-size: 1.2em;
+  line-height: 1.1;
 }
 
 .secondOption {
@@ -30,6 +35,8 @@
   margin-left: 20px;
   max-width: 500px;
   overflow-wrap: break-word;
+  font-size: 1.2em;
+  line-height: 1.1;
 }
 
 .nextButton {
@@ -37,4 +44,39 @@
   border-radius: 50px;
   color: white;
   margin-top: 20px;
+}
+
+.orDiv {
+    background-color: white;
+    border-radius: 40px;
+    height: 60px;
+    margin-top: 25px;
+    width: 60px;
+}
+.orH1 {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+      display: block;
+    }
+    .firstOption {
+      font-size: 10px;
+      margin-right: 0;
+      max-width: 300px;
+    }
+    .secondOption {
+      font-size: 10px;
+      margin-left: 0;
+      max-width: 300px;
+    }
+    .orDiv {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .orH1 {
+      padding: 5px;
+    }
 }
